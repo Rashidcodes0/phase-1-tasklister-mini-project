@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get references to the input field, submit button, and task list
   let taskInput = document.getElementById("new-task-description");
   let submitBtn = document.getElementById("create-task-form").querySelector("input[type='submit']");
   let taskList = document.getElementById("tasks");
 
-  // Add event listener to the submit button
   submitBtn.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
-
+    event.preventDefault();
     // Get the task string from the input field
     let task = taskInput.value;
 
